@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="serveyForm.css">
+  </head>
+</head>
+<body>
+  <div class="container">
+    <div class="headPlace">
+      <h1 id="title">Servey form</h1>
+      <p id="description">full the below information to be part of our society!</p>
+    </div>
+    <div class="elemPlace">
+      <form id="survey-form"> 
+      <label id="name-label" >Name <input type="text" id="name" placeholder="enter your name" required></label> 
+      <label id="email-label">Email <input type="email" id="email" placeholder="enter your email" required></label>
+      <label id="number-label">Age <input type="number" id="number" min="12" max="120" placeholder="age"></label>
+      <label>Which option best describes your current role?</label>
+        <select id="dropdown">
+          <option>select current role</option>
+          <option>student</option>
+          <option>other</option>
+        </select>
+      <label>Would you recommend freeCodeCamp to a friend?</label>
+      <label class="list-selcted"><input type="radio" value="1" name="recommendation"> Definitely</label>
+      <label class="list-selcted"><input type="radio" value="2" name="recommendation"> Maybe</label>
+      <label class="list-selcted"><input type="radio" value="3" name="recommendation"> Not sure</label>
+      <label>What would you like to see improved?</label>
+      <label class="list-selcted"><input type="checkbox" value="1"> Front-end Projects</label>
+      <label class="list-selcted"><input type="checkbox" value="2"> Back-end Projects</label>
+      <label class="list-selcted"><input type="checkbox" value="3"> Data Visualization</label>
+      <label class="list-selcted"><input type="checkbox" value="4"> Challenges</label>
+      <label>Any comments or suggestions?<textarea></textarea></label>
+      <button id="submit">submit</button>
+      </form>
+    </div> 
+  </div> 
+</body>
+</html>
